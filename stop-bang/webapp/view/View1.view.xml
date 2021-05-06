@@ -1,0 +1,84 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="stopbang.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+                	<content>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="1. Schnarchen Sie laut (so laut, dass es durch geschlossenen Türen hörbar ist oder                       dass Ihr(e) Bettnachbar(in) Sie nachts mit dem Ellenbogen anstößt, weil Sie schnarchen)?" width="100%" id="label1_1"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_1">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_1"/>
+					            <RadioButton text="Nein" id="button1_2"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="2. Sind Sie tagsüber oft müde, erschöpft oder schläfrig (schlafen Sie z. B. beim                       Autofahren ein)?" width="100%" id="label1_2"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_2">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_3"/>
+					            <RadioButton text="Nein" id="button1_4"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="3.  Ist es schon einmal jemanden aufgefallen, dass Sie im Schlaf aufhören zu                       atmen oder keine Luft mehr bekommen/nach Luft schnappen?" width="100%" id="label1_3"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_3">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_5"/>
+					            <RadioButton text="Nein" id="button1_6"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="4. Haben Sie Bluthochdruck oder werden Sie dagegen behandelt?" width="100%" id="label1_4"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_4">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_7"/>
+					            <RadioButton text="Nein" id="button1_8"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="5.  Body Mass Index über 35 kg/m^2?" width="100%" id="label1_5"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_5">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_9"/>
+					            <RadioButton text="Nein" id="button1_10"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="6. Sind Sie über 50 Jahre alt?" width="100%" id="label1_6"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_6">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_11"/>
+					            <RadioButton text="Nein" id="button1_12"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="7. Bei Männern: Haben Sie eine Kragenweite von 43 cm oder mehr?" width="100%" id="label1_7"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_7">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_13"/>
+					            <RadioButton text="Nein" id="button1_14"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="8. Bei Frauen: Haben Sie eine Kragenweite von 41 cm oder mehr?" width="100%" id="label1_8"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_8">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_15"/>
+					            <RadioButton text="Nein" id="button1_16"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                     <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="9. Sind sie Männlich?" width="100%" id="label1_9"/>
+                    	<RadioButtonGroup xmlns="sap.m" columns="1" id="group1_9">
+					        <buttons>
+					            <RadioButton text="Ja" id="button1_17"/>
+					            <RadioButton text="Nein" id="button1_18"/>
+					        </buttons>
+					    </RadioButtonGroup>
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text=" " width="100%" id="label1234567"/>                     
+                        <Button xmlns="sap.m" text="Absenden" id="button1_1618385878940"/>                      
+                     
+                   
+					</content>
+                  
+				<headerContent>
+				    <Label text="Sie haben noch 10:11 Stunden Zeit" width="100%" id="label0"/>
+				</headerContent>
+                  
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

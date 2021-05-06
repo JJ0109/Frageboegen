@@ -1,0 +1,100 @@
+<mvc:View
+    controllerName="ess.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Die folgenden Fragen beziehen sich auf Ihr normalens Alltagsleben in der letzten Zeit:" width="100%" id="label1_10"/>
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Für wie wahrscheinlich halten Sie es, dass Sie in einer der folgenden Situationen einnicken oder einschlafen würden, -sich also nicht nur müde fühlen?" width="100%" id="label1_11"/>
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Auch wenn Sie in der letzten Zeit einige dieser Situationen nicht erlebt haben, versuchen Sie sich trotzdem vorzustellen, wie sich diese Situationen auf Sie ausgewirkt hätten." width="100%" id="label1_12"/>
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="" width="100%" id="label1_13"/>
+                     
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="1. Im Sitzen lesend" width="100%" id="label2_0"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_0">
+					        <buttons>
+					            <RadioButton id="button2_0" text="niemals"/>
+					            <RadioButton id="button2_1" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_2" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_3" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="2. Beim Fernsehen" width="100%" id="label2_1"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_1">
+					        <buttons>
+					            <RadioButton id="button2_4" text="niemals"/>
+					            <RadioButton id="button2_5" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_6" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_7" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="3. Wenn Sie passiv (als Zuschauer) in der Öffentlichkeit sitzen (z. B. im Theater oder bei einem Vortrag)" width="100%" id="label2_2"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_2">
+					        <buttons>
+					            <RadioButton id="button2_8" text="niemals"/>
+					            <RadioButton id="button2_9" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_10" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_11" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="4. Als Beifahrer im Auto während einer einstündigen Fahrt ohne Pause" width="100%" id="label2_3"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_3">
+					        <buttons>
+					            <RadioButton id="button2_12" text="niemals"/>
+					            <RadioButton id="button2_13" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_14" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_15" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="5. Wenn Sie sich am Nachmittag hingelegt haben, um auszuruhen" width="100%" id="label2_4"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_4">
+					        <buttons>
+					            <RadioButton id="button2_16" text="niemals"/>
+					            <RadioButton id="button2_17" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_18" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_19" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="6. Wenn Sie sitzen und sich mit jemanden unterhalten" width="100%" id="label2_5"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_5">
+					        <buttons>
+					            <RadioButton id="button2_20" text="niemals"/>
+					            <RadioButton id="button2_21" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_22" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_23" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="7. Wenn Sie nach dem Mittagessen (ohne Alkohol) ruhig dasitzen" width="100%" id="label2_6"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_6">
+					        <buttons>
+					            <RadioButton id="button2_24" text="niemals"/>
+					            <RadioButton id="button2_25" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_26" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_27" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="8. Wenn Sie als Fahrer eines Autos verkehrsbedingt einige Minuten halten müssen" width="100%" id="label2_7"/>
+					    <RadioButtonGroup xmlns="sap.m" columns="1" id="group2_7">
+					        <buttons>
+					            <RadioButton id="button2_28" text="niemals"/>
+					            <RadioButton id="button2_29" text="niedrige Wahrscheinlichkeit"/>
+					            <RadioButton id="button2_30" text="mittlere Wahrscheinlichkeit"/>
+                                <RadioButton id="button2_31" text="hohe Wahrscheinlichkeit"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                        <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text=" " width="100%" id="label1234567"/>                     
+                        <Button xmlns="sap.m" text="Absenden" id="button1_1618385878940"/>                      
+					</content>
+
+                <headerContent>
+				    <Label text="Sie haben noch 10:11 Stunden Zeit" width="100%" id="label0"/>
+				</headerContent>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

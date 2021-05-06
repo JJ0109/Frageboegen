@@ -1,0 +1,57 @@
+_schema-version: "3.2"
+ID: frageboegen
+version: 0.0.1
+modules:
+- name: frageboegen-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: frageboegen-destination-service
+    parameters:
+      content-target: true
+  - name: frageboegen_html_repo_host
+    parameters:
+      service-key:
+        name: frageboegen_html_repo_host-key
+  - name: uaa_frageboegen
+    parameters:
+      service-key:
+        name: uaa_frageboegen-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: Schlaftagebuch_frageboegen_html_repo_host
+          ServiceInstanceName: frageboegen-html5-app-host-service
+          ServiceKeyName: frageboegen_html_repo_host-key
+          sap.cloud.service: Schlaftagebuch
+        - Authentication: OAuth2UserTokenExchange
+          Name: Schlaftagebuch_uaa_frageboegen
+          ServiceInstanceName: frageboegen-xsuaa-service
+          ServiceKeyName: uaa_frageboegen-key
+          sap.cloud.service: Schlaftagebuch
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+resources:
+- name: frageboegen-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      version: 1.0.0
+    service: destination
+    service-name: frageboegen-destination-service
+    service-plan: lite
+- name: frageboegen_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: frageboegen-html5-app-host-service
+    service-plan: app-host
+- name: uaa_frageboegen
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: frageboegen-xsuaa-service
+    service-plan: application

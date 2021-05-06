@@ -1,0 +1,128 @@
+<mvc:View 
+xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anamnesebogenpatient.controller.View1" displayBlock="true">
+
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+                	<content>
+
+
+                    
+					<Label text="1. Größe (in cm):" width="10%" id="label0"/>
+					<Input xmlns="sap.m" value="Value" id="input0" width="5%"/>
+					<Label text="" width="100%" id="label3"/>
+					<Label text="2. Gewicht (in kg):" width="10%" id="label0_1618470319944"/>
+					<Input xmlns="sap.m" value="Value" id="input1" width="5%"/>
+                    <Label text="" width="10%" id="label010"/>
+					<Label text="3. Welches Problem führte zur aktuellen Vorstellung?" width="100%" id="label01"/>
+                    	<VBox>
+                    <CheckBox text="Schlaflosigkeit" />
+                    <CheckBox text="Müdigkeit" />
+		            <CheckBox text="Unkonzentriertheit" />
+		            <CheckBox text="Sonstiges, bitte unteres Feld ausfüllen:" />
+                    	</VBox>
+                    <Input xmlns="sap.m" value="Sonstiges" id="input3" width="100%"/>
+					</content>
+                    <Label text="4. Wann gehen Sie am Abend ins Bett?" width="70%" id="label078"/>
+                        <TimePicker xmlns="sap.m" id="picker0" displayFormat="HH:mm"/>
+                    <Label text="5. Wann stehen Sie auf?" width="70%" id="label0781"/>
+                        <TimePicker xmlns="sap.m" id="picker01" displayFormat="HH:mm"/>
+                    <Label text="6. Wie lange dauert es normalerweise, bis Sie einschlafen? 
+(in Minuten von)" width="70%" id="label071"/>
+                        <TimePicker xmlns="sap.m" id="picker02" displayFormat="mm"/>
+                    <Label text="7. Wie lange dauert es normalerweise, bis Sie einschlafen? 
+(in Minuten bis)" width="70%" id="label081"/>
+                        <TimePicker xmlns="sap.m" id="picker03" displayFormat="mm"/>
+                    <Label text="8. Wie wachen Sie üblicherweise auf?" width="100%" id="label123"/>
+                    <RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+					        <buttons>
+					            <RadioButton id="button1" text="spontan"/>
+					            <RadioButton id="button0" text="mit Wecker"/>
+					            <RadioButton id="button2" text="unterschiedlich"/>
+					        </buttons>
+					    </RadioButtonGroup>		
+                    <Label text="9. Wie schätzen Sie Ihre Schlafdauer ein? (werktags in Stunden)" width="100%" id="label011"/>
+                        <TimePicker xmlns="sap.m" id="picker04" displayFormat="HH:mm"/>
+                    <Label text="10. Wie schätzen Sie Ihre Schlafdauer ein? (Wochenende/Urlaub in 
+Stunden) " width="100%" id="label0181"/>
+                        <TimePicker xmlns="sap.m" id="picker05" displayFormat="HH:mm"/>
+                    <Label text="11. Sind bzw. waren Sie Schichtarbeiter?" width="100%" id="label23"/>
+                    <RadioButtonGroup xmlns="sap.m" columns="1" id="group1">
+					        <buttons>
+					            <RadioButton id="button3" text="niemals"/>
+					            <RadioButton id="button4" text="aktuell"/>
+					            <RadioButton id="button5" text="zeitweilig"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                    <Label text="12. Ab wann wann/sind arbeiten sie in der Schicht?" width="100%" id="label232"/>
+				<DatePicker
+						id="datePicker"
+						value="{products>Date}" valueFormat="dd-MM-yyyy" displayFormat="short" width="10%"/>
+                    <Label text="13. Bis wann wann/sind arbeiten sie in der Schicht?" width="100%" id="label22"/>
+				<DatePicker
+						id="datePicker0"
+						value="{products>Date}" valueFormat="dd-MM-yyyy" displayFormat="short" width="10%"/>
+                    <Label text="14. Wann beginnt ihre aktuelle Arbeitszeit?" width="100%" id="label0239"/>
+                        <TimePicker xmlns="sap.m" id="picker06" displayFormat="HH:mm"/>
+                    <Label text="15. Wann endet ihre aktuelle Arbeitszeit?" width="100%" id="label029"/>
+                        <TimePicker xmlns="sap.m" id="picker07" displayFormat="HH:mm"/>
+                    <Label text="16. Bitte geben Sie die Medikamente an, die Sie aktuell einnehmen und wann: " width="100%" id="label29"/>
+                    <Input xmlns="sap.m" value="Medikament 1: " id="input4" width="10%"/>
+	                    <VBox>
+                    <CheckBox text="morgens" />
+                    <CheckBox text="mittags" />
+		            <CheckBox text="abends" />
+		            <CheckBox text="nachts" />
+                    	</VBox>
+                    <Input xmlns="sap.m" value="Medikament 2: " id="input5" width="10%"/>
+	                    <VBox>
+                    <CheckBox text="morgens" />
+                    <CheckBox text="mittags" />
+		            <CheckBox text="abends" />
+		            <CheckBox text="nachts" />
+                    	</VBox>
+                    <Input xmlns="sap.m" value="Medikament 3: " id="input6" width="10%"/>
+	                    <VBox>
+                    <CheckBox text="morgens" />
+                    <CheckBox text="mittags" />
+		            <CheckBox text="abends" />
+		            <CheckBox text="nachts" />
+                    	</VBox>
+                    <Input xmlns="sap.m" value="Medikament 4: " id="input7" width="10%"/>
+	                    <VBox>
+                    <CheckBox text="morgens" />
+                    <CheckBox text="mittags" />
+		            <CheckBox text="abends" />
+		            <CheckBox text="nachts" />
+                    	</VBox>
+                    <Input xmlns="sap.m" value="Medikament 5: " id="input8" width="10%"/>
+	                    <VBox>
+                    <CheckBox text="morgens" />
+                    <CheckBox text="mittags" />
+		            <CheckBox text="abends" />
+		            <CheckBox text="nachts" />
+                    	</VBox>                                                
+                    <Label text="17. Leiden Sie unter folgenden Beschwerden?" width="100%" id="label173"/>
+                    <Label text="Probleme beim Durchschlafen?" width="100%" id="label183"/>
+                    <RadioButtonGroup xmlns="sap.m" columns="1" id="group4">
+					        <buttons>
+					            <RadioButton id="button7" text="ja"/>
+					            <RadioButton id="button8" text="nein"/>
+					        </buttons>
+					    </RadioButtonGroup>	
+                    <Label text="Wie häufig pro Woche?" width="100%" id="label83"/>
+					<Input xmlns="sap.m" value="Value" id="input9" width="5%"/>
+                    <Label text="Seit wann?" width="100%" id="label632"/>
+				   <DatePicker
+						id="datePicker2"
+						value="{products>Date}" valueFormat="dd-MM-yyyy" displayFormat="short" width="10%"/>
+                   
+
+
+
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
